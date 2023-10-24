@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel cadastro de clientes</title>
+    <link href="https://rpontesoficial.github.io/cadastroclientesrpontes/css/style.css" rel="stylesheet"/>
+    <script src="https://rpontesoficial.github.io/cadastroclientesrpontes/js/script.js"></script>
+    <script src="https://rpontesoficial.github.io/cadastroclientesrpontes/js/validation.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h4> CADASTRO DE CLIENTES </h4>
+        <form>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" onchange="validateFields()" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" onchange="validateFields()" required>
+            </div>
+            <button type="button" id="button" id="recover-password-button" onclick="log()">Entrar</button>
+            <br><br>
+        </form>
+    </div>
+<script src="js/script.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>
